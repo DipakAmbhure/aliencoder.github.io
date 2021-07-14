@@ -12,8 +12,8 @@ html{
 }
 
 :root {
-    --primary: hsla(100,60%,10%,0.65);
-    --secondary: rgba(179, 114, 97, 0.65);
+    --primary: hsla(100,60%,10%,0.75);
+    --secondary: rgba(0, 0, 0, 0.75);
 
 }
 
@@ -24,9 +24,16 @@ html{
     background:linear-gradient(135deg, var(--primary), var(--secondary)),
              url("../img/upbackimg.jpg") no-repeat center center /cover;
     color: white;
-    clip-path: polygon(0 0, 100% 0, 100% 77%, 48% 100%, 0 77%);
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 50% 100%, 0 87%);
     background-attachment: fixed;
+    
 }
+
+.bgimg1shadow {
+    filter: drop-shadow(0 0 2rem rgba(0, 0, 0, 1) );
+}
+
+
 
 .UpperContainer {
     width: 100%;
@@ -41,6 +48,9 @@ html{
     left: 2rem;
     line-height: 7rem;
     font-size: 5rem;
+    font-family: 'Otomanopee One', sans-serif;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    letter-spacing: .2rem;
 }
 
 .menu {
@@ -48,13 +58,24 @@ html{
     top: 0;
     right: 2rem;
     line-height: 7rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .menu ul li {
     display: inline-block;
     margin: 0 1.5rem;
     
+}
+
+.menu ul li a:hover{
+    color: rgb(255, 167, 2);
+    border-bottom: .2rem solid orange;
+}
+
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
 }
 
 .welcome-Container{
@@ -67,11 +88,13 @@ html{
 }
 
 .welcome-Container #welmsg{
-    font-size: 5rem;
+    font-size: 4rem;
+    font-family: 'Otomanopee One', sans-serif;
 }
 
 .welcome-Container #about-me{
     font-size: 2rem;
+    text-transform: uppercase;
 }
 
 .welcome-Container #website-for{
@@ -83,4 +106,134 @@ html{
     display: inline-block;
     margin-top: 1rem;
     margin-left: 1rem;
+    text-decoration: none;
 }
+
+.services_cont{
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 70vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 90%;
+    margin-top: 5rem;
+
+}
+
+.services_heading{
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    display: grid;
+    place-content: center;
+    font-size: 4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.services_graph{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4rem;
+
+
+}
+
+.services_overall{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+
+}
+
+
+
+#s_border {
+    width: 80%;
+    height: 1rem;
+    background-color: #e0e0e0
+}
+
+#s_size1{
+    width: 80%;
+    background-color: rgb(166, 255, 0);
+    height: 100%;
+}
+
+#s_size2{
+    width: 60%;
+    background-color: rgb(22, 174, 245);
+    height: 100%;
+}
+
+#s_size3{
+    width: 40%;
+    background-color: red;
+    height: 100%;
+}
+
+#s_size4{
+    width: 90%;
+    background-color: rgb(255, 0, 200);
+    height: 100%;
+}
+
+#s_size5{
+    width: 20%;
+    background-color: rgb(255, 238, 0);
+    height: 100%;
+}
+
+#s_size6{
+    width: 40%;
+    background-color: rgb(41, 28, 223);
+    height: 100%;
+}
+
+.single_ser{
+    position: relative;
+    margin-bottom: 8rem;
+    margin-top: 2rem;
+}
+
+#o_para{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    position: absolute;
+    top: 6rem;
+    left: 9rem;
+}
+
+#o_heading{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    position: absolute;
+    top: 1rem;
+    left: 9rem;
+}
+
+.services_overall .single_ser> img {
+    width: 6rem;
+    height: 8rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+
+}
+
+
+
+
+
+
+
