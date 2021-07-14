@@ -385,3 +385,7 @@ html{
     z-index: 2;
     visibility: visible;
 }
+
+a{
+    text-decoration: none;
+}
