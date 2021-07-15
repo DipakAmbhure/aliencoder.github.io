@@ -4,6 +4,7 @@
 
     <head>
         <title>AlienCoder</title>
+
         <link href="./css/index.css" type="text/css" rel="stylesheet">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +39,10 @@
             <div class="welcome-Container">
                 <span id="welmsg">Welcome to AlienCoder</span>
                 <span id="about-me">About Us</span>
-                <span id="website-for">Website for Learners</span>
+                <span id="website-for">
+                    <span>Website for </span>
+                    <p id="chtext" data-text="Programmers">Programmers</p>
+                </span>
                 <ul>
                     <li>Instagram</li>
                     <li>Facebook</li>
@@ -214,6 +218,18 @@
         
 
     </body>
+
+    <script>
+        var x = document.getElementById("chtext");
+        var A = ["WebDevelopers","EthicalHackers"," Programmers","Tech_Learners"];
+        var index = 0;
+        setInterval(() => {
+            x.innerHTML = A[index];
+            x.setAttribute("data-text",A[index]);
+            index = (index+1)%4;
+        }, 4000);
+    
+    </script>
 
 
 
