@@ -4,6 +4,7 @@
 
     <head>
         <title>AlienCoder</title>
+        
 
         <link href="./css/index.css" type="text/css" rel="stylesheet">
         
@@ -20,7 +21,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     </head>
 
-    <body>
+    <body onload="showcontent()">
+        <div class="loading">
+
+            <div class="outerring"></div>
+            <div class="middlering"></div>
+            <div class="innerring"></div>
+            <div class="dot"></div>
+
+
+        </div>
+
+
+
         <div class="bgimg1shadow">
         <div class="bgimg1">
             <div class="UpperContainer">
@@ -229,6 +242,14 @@
             index = (index+1)%4;
         }, 4000);
     
+    </script>
+
+    <script>
+
+        function showcontent(){
+            var preloader = document.getElementsByClassName("loading")[0];
+            preloader.style.display = 'none';
+        }
     </script>
 
 
